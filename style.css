@@ -179,6 +179,45 @@ header{
     /* background:linear-gradient(black,green); */
     background:linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)), url(/images/donation13.jpg)no-repeat center center/cover;
     background-blend-mode: multiply;
+    animation: me 30s infinite;
+}
+@keyframes me{
+    10%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation13.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    20%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation0.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    30%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation0.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    40%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation0.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    60%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation1.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    70%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation1.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    80%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation12.png)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    90%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation12.png)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    100%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation13.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
 }
 i{
     color: wheat;
@@ -436,7 +475,7 @@ section .donate-today>button{
 .poster-2>div:last-child{
     width: 460px;
     height: 520px;
-    background:url(/images/donation10.jpg)no-repeat center center/cover;
+    background:url(/images/donation11.jpg)no-repeat center center/cover;
     margin: 0px 50px 0 0;
     border-radius: 10px;
 }
