@@ -486,3 +486,14 @@ section .donate-today>button{
     color: white;
     font-size: 18px;
 }
+
+footer{
+    background-color: black;
+}
+footer>h1{
+    color: red;
+}
+footer>.primary-text{
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
