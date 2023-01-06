@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather&family=Moon+Dance&family=Open+Sans:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: serif;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -170,6 +170,11 @@ nav .menu-btn:checked~ .menu-icon .nav-icon::before{
     background-color: rgba(86, 86, 86, 0);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.088);
 }
+.nav-button:hover{
+    cursor: pointer;
+    color: rgb(176, 234, 2);
+
+}
 .nav-button>span{
     font-size: 40px;
 }
@@ -195,7 +200,11 @@ header{
         background-blend-mode: multiply;
     }
     40%{
-        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation0.jpg)no-repeat center center/cover;
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation3.jpg)no-repeat center center/cover;
+        background-blend-mode: multiply;
+    }
+    50%{
+        background: linear-gradient(rgb(255, 255, 255),rgb(0, 0, 0)),url(/images/donation3.jpg)no-repeat center center/cover;
         background-blend-mode: multiply;
     }
     60%{
@@ -296,15 +305,23 @@ section .donate-today .mouny{
     color: red;
     font-size: 30px;
     font-weight: 900;
+    margin: 20px;
+
 }
-section .donate-today .mouny>div:nth-child(2){
-    border: 3px solid rgb(255, 8, 0);
+section .donate-today .mouny>div{
+    border: 3px solid rgba(255, 8, 0, 0);
     padding: 40px;
     border-radius: 10px;
-    background-color: rgba(255, 0, 0, 0.089);
-    color: red;
-    margin: 20px;
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: all .1s ease-in;
 }
+section .donate-today .mouny>div:hover{
+    border: 3px solid rgb(255, 8, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.089);  
+}
+
 section .donate-today>input{
     color: red;
     width: 90%;
@@ -314,7 +331,7 @@ section .donate-today>input{
     border: 0;
     border-bottom: 3px solid silver;
     margin: 50px 0 20px;
-    padding: 0 36%;
+    padding: 0 34%;
 }
 
 .donate-today>input[type=number]::-webkit-inner-spin-button,
@@ -368,7 +385,13 @@ section .donate-today>button{
 
 }
 .plan-cards>li:nth-child(1){
+    border-radius: 10px;
     background-color: rgba(116, 223, 223, 0.248);
+    transition: all 0.2s ease-in-out;
+}
+.plan-cards>li:nth-child(1):hover{
+    background-color: rgba(116, 223, 223, 0.418);
+    box-shadow: 2px 2px 40px rgba(0, 215, 253, 0.232);
 }
 .plan-cards>li>img{
     margin: 30px 0;
@@ -392,9 +415,19 @@ section .donate-today>button{
 .plan-cards>li:nth-child(2){
     background-color: rgba(255, 0, 0, 0.16);
     margin: 29px 29px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.plan-cards>li:nth-child(2):hover{
+    box-shadow: 2px 2px 40px rgba(255, 0, 0, 0.175);
 }
 .plan-cards>li:nth-child(3){
     background-color: rgba(255, 255, 0, 0.166);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.plan-cards>li:nth-child(3):hover{
+    box-shadow: 2px 2px 40px rgba(255, 255, 0, 0.242);
 }
 
 
@@ -536,9 +569,21 @@ footer{
     background-color: black;
 }
 footer>h1{
+    font-family: 'Abril Fatface', cursive;
+    /* font-family: 'Moon Dance', cursive; */
+    /* font-family: 'Merriweather', serif; */
     color: red;
 }
 footer>.primary-text{
     margin-bottom: 0;
     padding-bottom: 50px;
+}
+.btn-last,.primary-btn:hover{
+    background-color: rgb(203, 2, 2);
+    cursor: pointer;
+}
+.btn-last,.primary-btn:focus{
+    background-color: green;
+    cursor: pointer;
+
 }
