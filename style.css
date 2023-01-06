@@ -456,3 +456,33 @@ section .donate-today>button{
     flex-direction: row-reverse;
     background: red;
 } */
+
+/* Updates start here */
+.updates{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: ;
+}
+.all{
+    display: flex;
+    background-color: rgb(244, 238, 218);
+    padding: 80px 150px;
+    margin-bottom: 100px;
+}
+#mail{
+    width: 300px;
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.btn-last{
+    width: 150px;
+    line-height: 50px;
+    padding: 0 20px;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 18px;
+}
